@@ -6,3 +6,10 @@ to run test go to next steps:
 -select TypeScript + end-to-end testing + install prefered browsers (if additional browsers not prompted, try "npx playwright install" and/or "npm install @playwright/test@latest")
 -to run test "npx playwright test"
 -no additional ReportTool configured but we still can use PlaywrightHTMLreport "npx playwright show-report"
+
+
+Simple branches idea in project:
+main - stable aproved release version of tests
+develop - stable version of tests with aproved but not released tests
+feature/*name* - new tests, could be unstable
+bugfix/*name* - fixes/refactor/... of existed functionality
