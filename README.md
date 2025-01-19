@@ -9,7 +9,8 @@ to run test go to next steps:
 
 
 **Simple branches idea in project:**
-**main - stable aproved release version of tests**
-**develop - stable version of tests with aproved but not released tests**
-**feature/*name* - new tests, could be unstable**
-**bugfix/*name* - fixes/refactor/... of existed functionality**
+
+* main - stable approved release version of tests
+* develop - stable version of tests with approved but not released tests
+* feature/*name* - new tests, could be unstable
+* bugfix/*name* - fixes/refactor/... of existed functionality
