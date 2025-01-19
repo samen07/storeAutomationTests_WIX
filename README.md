@@ -8,7 +8,7 @@ to run test go to next steps:
 4. **-no additional ReportTool configured but we still can use PlaywrightHTMLreport "npx playwright show-report"**
 
 
-**Simple branches idea in project: **
+**Simple branches idea in project:**
 **main - stable aproved release version of tests**
 **develop - stable version of tests with aproved but not released tests**
 **feature/*name* - new tests, could be unstable**
