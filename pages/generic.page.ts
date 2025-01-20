@@ -1,16 +1,21 @@
 import { Page, expect } from '@playwright/test';
-import { MainPage } from './MainPage';
+import { MainPage } from './main.page';
 
-export class GenericStorePage {
+export class GenericPage {
     protected page: Page;
 
     constructor(page: Page) {
         this.page = page;
     }
 
+    public getPage(): Page {
+        return this.page;
+    }
+
     async goToMainPage(): Promise<MainPage> {
         await this.page.locator('.navbar-brand').click();
         await this.page.waitForLoadState('networkidle');
+
         return new MainPage(this.page);
     }
 
