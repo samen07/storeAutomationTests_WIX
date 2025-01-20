@@ -1,7 +1,7 @@
 import { Page, expect } from '@playwright/test';
-import { GenericStorePage } from './GenericStorePage';
+import { GenericPage } from './generic.page';
 
-export class ProductPage extends GenericStorePage {
+export class ProductPage extends GenericPage {
     constructor(page: Page) {
         super(page);
     }
@@ -15,10 +15,10 @@ export class ProductPage extends GenericStorePage {
     }
 
     async addToCart(): Promise<void> {
-        this.page.once('dialog', async (dialog) => {
-            expect(dialog.message()).toBe('Product added');
-            await dialog.accept();
-        });
-        await this.page.click('a.btn.btn-success');
+        await this.page.click('a.btn-success');
+        const alertPromise = this.page.waitForEvent('dialog');
+        const alert = await alertPromise;
+        expect(alert.message()).toBe('Product added');
+        await alert.accept();
     }
 }

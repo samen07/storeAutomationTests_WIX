@@ -1,0 +1,26 @@
+{
+  "name": "storeautomationtests_wix",
+  "version": "1.0.0",
+  "description": "Its simple demo of automation tests using Playwright+TS for Store",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samen07/storeAutomationTests_WIX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/samen07/storeAutomationTests_WIX/issues"
+  },
+  "homepage": "https://github.com/samen07/storeAutomationTests_WIX#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.7"
+  }
+}
